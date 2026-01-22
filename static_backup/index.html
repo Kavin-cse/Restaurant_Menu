@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhabi Restaurant | Luxurious South Indian Cuisine</title>
+    <meta name="description"
+        content="Experience the finest South Indian cuisine at Dhabi Restaurant. From Masala Dosa to Idli Sambar, enjoy our premium culinary delights.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo">Dhabi Restaurant</a>
+            <nav class="nav">
+                <a href="#hero">Home</a>
+                <a href="#menu">Menu</a>
+                <a href="#story">About</a>
+                <a href="#chef">Chef</a>
+            </nav>
+            <button class="btn-book">Book a Table</button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <div class="hero-bg-glow"></div>
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <h2 class="sub-headline">Welcome to Dhabi</h2>
+                    <h1 class="headline">All Delicious<br><span class="highlight">South Indian</span></h1>
+                    <p class="hero-text">Eggs, Salad, fruits, pasta & authentic spices.</p>
+                    <a href="#menu" class="btn-primary">Find for more</a>
+                </div>
+                <div class="hero-visual">
+                    <div class="glowing-ring"></div>
+                    <img src="assets/images/hero-thali.png" alt="South Indian Thali" class="hero-img floating-hero">
+                    <!-- Floating particles implemented in CSS/JS -->
+                    <div class="floater f1"></div>
+                    <div class="floater f2"></div>
+                    <div class="floater f3"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Menu Section -->
+        <section id="menu" class="menu-section">
+            <div class="container">
+                <div class="section-header center">
+                    <h2 class="section-title">Our Delicious and Special <span class="highlight-text">Salad Indian</span>
+                    </h2>
+                    <p class="section-subtitle">Experience the taste of perfection</p>
+                </div>
+
+                <div class="menu-grid">
+                    <!-- Card 1 -->
+                    <div class="menu-card" data-speed="1.1">
+                        <div class="card-img-wrapper">
+                            <img src="assets/images/dosa.png" alt="Masala Dosa" class="menu-img">
+                            <div class="price-tag">$12</div>
+                        </div>
+                        <div class="card-info">
+                            <h3>Masala Dosa</h3>
+                            <p>Food is any substance consumed by an organism for nutritional support.</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="menu-card" data-speed="1.2">
+                        <div class="card-img-wrapper">
+                            <img src="assets/images/idli.png" alt="Idli Sambar" class="menu-img">
+                            <div class="price-tag">$12</div>
+                        </div>
+                        <div class="card-info">
+                            <h3>Idli Sambar</h3>
+                            <p>Food is any substance consumed by an organism for nutritional support.</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="menu-card" data-speed="1.1">
+                        <div class="card-img-wrapper">
+                            <img src="assets/images/vada.png" alt="Vada with Chutney" class="menu-img">
+                            <div class="price-tag">$12</div>
+                        </div>
+                        <div class="card-info">
+                            <h3>Vada with Chutney</h3>
+                            <p>Food is any substance consumed by an organism for nutritional support.</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="menu-card" data-speed="1.3">
+                        <div class="card-img-wrapper">
+                            <img src="assets/images/biryani.png" alt="Vegetable Biryani" class="menu-img">
+                            <div class="price-tag">$12</div>
+                        </div>
+                        <div class="card-info">
+                            <h3>Vegetable Biryani</h3>
+                            <p>Food is any substance consumed by an organism for nutritional support.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Story Section -->
+        <section id="story" class="story-section">
+            <div class="container story-container">
+                <div class="story-content">
+                    <h2 class="section-title">Welcome to our <br>Dhabi Restaurant</h2>
+                    <p class="story-text">
+                        Discover the authentic flavors of South India. Our culinary journey brings you the freshest
+                        ingredients, traditional recipes, and a passion for excellence in every bite.
+                    </p>
+                    <button class="btn-text">Read More &rarr;</button>
+                </div>
+                <div class="story-visual">
+                    <img src="assets/images/sambar.png" alt="Sambar Bowl" class="story-img floating-slow">
+                </div>
+            </div>
+        </section>
+
+        <!-- Chef Section -->
+        <section id="chef" class="chef-section">
+            <div class="container chef-container">
+                <div class="chef-visual">
+                    <img src="assets/images/chef.png" alt="Expert Chef" class="chef-img zoom-in">
+                </div>
+                <div class="chef-content">
+                    <h2 class="section-title">Our Dhabi Restaurant <br>Expert Chef</h2>
+                    <p class="chef-description">
+                        Meet our head chef, a master of spices and traditional techniques. With years of experience, he
+                        brings art to the plate and joy to your palate.
+                    </p>
+                    <ul class="chef-skills">
+                        <li>Master of Spices</li>
+                        <li>Authentic Recipes</li>
+                        <li>20+ Years Experience</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer / Testimonials -->
+        <footer class="footer">
+            <div class="container">
+                <div class="testimonials">
+                    <h2 class="footer-title">Our Dhabi Restaurant Happy Customers</h2>
+                    <div class="testimonial-cards">
+                        <div class="t-card">
+                            <div class="avatar av1"></div>
+                            <p>"The best Dosa I've ever had!"</p>
+                            <div class="stars">★★★★★</div>
+                        </div>
+                        <div class="t-card">
+                            <div class="avatar av2"></div>
+                            <p>"Truly authentic and luxurious atmosphere."</p>
+                            <div class="stars">★★★★★</div>
+                        </div>
+                        <div class="t-card">
+                            <div class="avatar av3"></div>
+                            <p>"A magical dining experience."</p>
+                            <div class="stars">★★★★★</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2026 Dhabi Restaurant. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </main>
+</body>
+
+</html>

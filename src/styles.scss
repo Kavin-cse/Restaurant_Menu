@@ -1,0 +1,54 @@
+/* Global Styles */
+:root {
+    --bg-color: #fcf9f2;
+    /* Cream from user request */
+    --primary-green: #8dbf41;
+    /* Green from user request */
+    --text-dark: #2c3e50;
+    --text-muted: #7f8c8d;
+    --font-main: 'Outfit', sans-serif;
+    --font-heading: 'Playfair Display', serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-dark);
+    font-family: var(--font-main);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4 {
+    font-family: var(--font-heading);
+}
+
+/* Animations */
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.floating-element {
+    animation: float 6s ease-in-out infinite;
+}
+
+/* Utility */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
