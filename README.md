@@ -104,12 +104,11 @@ ng build
 5. Open a Pull Request
 
 ---
-##Screenshot
+## Screenshot
 <img width="843" height="542" alt="menu4" src="https://github.com/user-attachments/assets/d0de534e-d05e-4cf0-9562-f45b0659845b" />
 <img width="1628" height="967" alt="menu5" src="https://github.com/user-attachments/assets/2b7dba7a-3fe3-41a2-955e-cc2dcb670f31" />
-
 <img width="852" height="517" alt="menu2" src="https://github.com/user-attachments/assets/93cb4e33-9616-4a6b-a8ed-d330ff46ec36" />
-<im<img width="862" height="891" alt="menu1" src="https://github.com/user-attachments/assets/9e3fe175-181f-4093-8001-40f3f2d07fb5" /> width="807" height="518" alt="menu3" src="https://github.com/user-attachments/assets/52b02cb5-e53d-4e97-95d5-c3243949f01e" />
+<img width="862" height="891" alt="menu1" src="https://github.com/user-attachments/assets/9e3fe175-181f-4093-8001-40f3f2d07fb5" />
 
 
 **Built with ❤️ using Angular 17 for a Premium Dining Experience**
