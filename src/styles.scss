@@ -1,54 +1,182 @@
-/* Global Styles */
+/* =============================================
+   Global Styles — Dhabi Restaurant
+   ============================================= */
+
+/* Import Angular Material pre-built theme */
+@use '@angular/material' as mat;
+
 :root {
-    --bg-color: #fcf9f2;
-    /* Cream from user request */
-    --primary-green: #8dbf41;
-    /* Green from user request */
-    --text-dark: #2c3e50;
-    --text-muted: #7f8c8d;
-    --font-main: 'Outfit', sans-serif;
-    --font-heading: 'Playfair Display', serif;
+  --bg-primary: #0f0e17;
+  --bg-secondary: #1a1a2e;
+  --bg-tertiary: #16213e;
+  --accent-gold: #f5a623;
+  --accent-gold-dark: #e67e22;
+  --accent-green: #4caf50;
+  --text-primary: #ffffff;
+  --text-secondary: rgba(255,255,255,0.65);
+  --text-muted: rgba(255,255,255,0.35);
+  --border-subtle: rgba(255,255,255,0.07);
+  --font-main: 'Outfit', sans-serif;
+  --font-heading: 'Playfair Display', serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
 }
 
 body {
-    background-color: var(--bg-color);
-    color: var(--text-dark);
-    font-family: var(--font-main);
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-main);
+  font-size: 16px;
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
 }
 
-/* Typography */
-h1,
-h2,
-h3,
-h4 {
-    font-family: var(--font-heading);
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 700;
 }
 
-/* Animations */
+/* ===================================================
+   Floating animation
+   =================================================== */
 @keyframes float {
-    0% {
-        transform: translateY(0px);
-    }
-
-    50% {
-        transform: translateY(-15px);
-    }
-
-    100% {
-        transform: translateY(0px);
-    }
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-12px); }
 }
 
 .floating-element {
-    animation: float 6s ease-in-out infinite;
+  animation: float 5s ease-in-out infinite;
 }
 
-/* Utility */
+/* ===================================================
+   Utility container
+   =================================================== */
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ===================================================
+   Custom Snackbar Themes
+   =================================================== */
+.success-snack .mdc-snackbar__surface {
+  background: #1e3a1e !important;
+  border: 1px solid #4caf50 !important;
+  border-radius: 12px !important;
+}
+
+.info-snack .mdc-snackbar__surface {
+  background: #1a2a3a !important;
+  border: 1px solid rgba(100,150,200,0.4) !important;
+  border-radius: 12px !important;
+}
+
+.error-snack .mdc-snackbar__surface {
+  background: #3a1e1e !important;
+  border: 1px solid #e74c3c !important;
+  border-radius: 12px !important;
+}
+
+/* ===================================================
+   Angular Material Dark Form Field Fix
+   =================================================== */
+.mat-mdc-form-field-focus-overlay {
+  background: rgba(255,255,255,0.04) !important;
+}
+
+.mat-mdc-form-field.mat-focused .mat-mdc-form-field-outline-thick {
+  color: var(--accent-gold) !important;
+}
+
+/* ===================================================
+   Material Select Panel (dark theme)
+   =================================================== */
+.mat-mdc-select-panel {
+  background: #1a1a2e !important;
+  border: 1px solid rgba(255,255,255,0.1) !important;
+  border-radius: 12px !important;
+}
+
+.mat-mdc-option {
+  color: rgba(255,255,255,0.8) !important;
+}
+
+.mat-mdc-option:hover {
+  background: rgba(245, 166, 35, 0.1) !important;
+}
+
+/* ===================================================
+   Material Chip overrides
+   =================================================== */
+.mat-mdc-chip.mat-mdc-standard-chip {
+  border-radius: 50px !important;
+}
+
+/* ===================================================
+   Stepper dark override
+   =================================================== */
+.mat-stepper-vertical, .mat-stepper-horizontal {
+  background: transparent !important;
+}
+
+.mat-step-text-label {
+  color: rgba(255,255,255,0.7) !important;
+}
+
+/* ===================================================
+   Scrollbar Styling
+   =================================================== */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.15);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-gold);
+}
+
+/* ===================================================
+   Router view transition animation
+   =================================================== */
+:root[style*="view-transition"] {
+  view-transition-name: root;
+}
+
+::view-transition-old(root) {
+  animation: 250ms ease-in-out both fade-out;
+}
+
+::view-transition-new(root) {
+  animation: 250ms ease-in-out both fade-in;
+}
+
+@keyframes fade-out {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }

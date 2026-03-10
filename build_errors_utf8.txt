@@ -1,0 +1,712 @@
+﻿[33mΓ¥»[39m Building...
+[32mΓ£ö[39m Building...
+Application bundle generation failed. [1.655 seconds] - 2026-03-10T05:16:05.270Z
+
+node.exe : [1m[31m[31mX [
+41;31m[[41;97mERROR[41;31m]
+[0m [1mNG2012: Component 
+imports must be standalone 
+components, directives, 
+pipes, or must be 
+NgModules.[0m 
+[1m[35m[plugin 
+angular-compiler][0m
+At line:1 char:1
++ & "C:\Program 
+Files\nodejs/node.exe" "C:\Us
+ers\kavin\AppData\Roaming\ 
+...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~
+    + CategoryInfo           
+   : NotSpecified: ([1m[3  
+  1m[31mX...r-compiler][   
+ 0m:String) [], RemoteExc    
+eption
+    + FullyQualifiedErrorId  
+   : NativeCommandError
+ 
+
+    src/app/app.component.ts:
+9:40:
+[37m      9 Γöé   imports: 
+[CommonModule, RouterOutlet, 
+[32mNavbarComponent[37m],
+        Γò╡                  
+                       
+[32m~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR
+[41;31m][0m [1mTS2307: 
+Cannot find module 
+'../services/cart.service' 
+or its corresponding type 
+declarations.[0m 
+[1m[35m[plugin 
+angular-compiler][0m
+
+    src/app/components/cart/c
+art.component.ts:8:28:
+[37m      8 Γöé import { 
+CartService } from [32m'../s
+ervices/cart.service'[37m;
+        Γò╡                  
+           [32m~~~~~~~~~~~~~
+~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR
+[41;31m][0m [1mTS2307: 
+Cannot find module 
+'../models/models' or its 
+corresponding type 
+declarations.[0m 
+[1m[35m[plugin 
+angular-compiler][0m
+
+    src/app/components/cart/c
+art.component.ts:9:25:
+[37m      9 Γöé import { 
+CartItem } from 
+[32m'../models/models'[37m;
+        Γò╡                  
+        
+[32m~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR
+[41;31m][0m [1mNG2003: No 
+suitable injection token for 
+parameter 'cartService' of 
+class 'CartComponent'.
+  Consider using the @Inject 
+decorator to specify an 
+injection token.[0m 
+[1m[35m[plugin 
+angular-compiler][0m
+
+    src/app/components/cart/c
+art.component.ts:514:11:
+[37m      514 Γöé     
+public 
+[32mcartService[37m: 
+CartService,
+          Γò╡            
+[32m~~~~~~~~~~~[0m
+
+  This type does not have a 
+value, so it cannot be used 
+as injection token.
+
+    src/app/components/cart/c
+art.component.ts:514:24:
+[37m      514 Γöé     
+public cartService: 
+[32mCartService[37m,
+          Γò╡                
+         [32m~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR
+[41;31m][0m [1mNG2012: 
+Component imports must be 
+standalone components, 
+directives, pipes, or must 
+be NgModules.[0m 
+[1m[35m[plugin 
+angular-compiler][0m
+
+    src/app/components/home/h
+ome.component.ts:12:85:
+[37m      12 Γöé 
+...MatButtonModule, 
+MatIconModule, 
+HeroComponent, 
+[32mMenuListComponent[37m],
+         Γò╡                 
+                             
+     
+[32m~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR
+[41;31m][0m [1mTS2307: 
+Cannot find module 
+'../services/menu.service' 
+or its corresponding type 
+declarations.[0m 
+[1m[35m[plugin 
+angular-compiler][0m
+
+    src/app/components/menu-d
+etail/menu-detail.component.t
+s:9:28:
+[37m      9 Γöé import { 
+MenuService } from [32m'../s
+ervices/menu.service'[37m;
+        Γò╡                  
+           [32m~~~~~~~~~~~~~
+~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR
+[41;31m][0m [1mTS2307: 
+Cannot find module 
+'../services/cart.service' 
+or its corresponding type 
+declarations.[0m 
+[1m[35m[plugin 
+angular-compiler][0m
+
+    src/app/components/menu-d
+etail/menu-detail.component.t
+s:10:28:
+[37m      10 Γöé import { 
+CartService } from [32m'../s
+ervices/cart.service'[37m;
+         Γò╡                 
+            [32m~~~~~~~~~~~~
+~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR
+[41;31m][0m [1mTS2307: 
+Cannot find module 
+'../models/models' or its 
+corresponding type 
+declarations.[0m 
+[1m[35m[plugin 
+angular-compiler][0m
+
+    src/app/components/menu-d
+etail/menu-detail.component.t
+s:11:25:
+[37m      11 Γöé import { 
+MenuItem } from 
+[32m'../models/models'[37m;
+         Γò╡                 
+         
+[32m~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR
+[41;31m][0m [1mNG2003: No 
+suitable injection token for 
+parameter 'menuService' of 
+class 'MenuDetailComponent'.
+  Consider using the @Inject 
+decorator to specify an 
+injection token.[0m 
+[1m[35m[plugin 
+angular-compiler][0m
+
+    src/app/components/menu-d
+etail/menu-detail.component.t
+s:506:11:
+[37m      506 Γöé     
+public 
+[32mmenuService[37m: 
+MenuService,
+          Γò╡            
+[32m~~~~~~~~~~~[0m
+
+  This type does not have a 
+value, so it cannot be used 
+as injection token.
+
+    src/app/components/menu-d
+etail/menu-detail.component.t
+s:506:24:
+[37m      506 Γöé     
+public menuService: 
+[32mMenuService[37m,
+          Γò╡                
+         [32m~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR
+[41;31m][0m [1mTS7006: 
+Parameter 'i' implicitly has 
+an 'any' type.[0m 
+[1m[35m[plugin 
+angular-compiler][0m
+
+    src/app/components/menu-d
+etail/menu-detail.component.t
+s:528:16:
+[37m      528 Γöé         
+.filter([32mi[37m => 
+i.category === 
+this.item!.category && i.id 
+!...
+          Γò╡                
+ [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR
+[41;31m][0m [1mTS2307: 
+Cannot find module 
+'../services/menu.service' 
+or its corresponding type 
+declarations.[0m 
+[1m[35m[plugin 
+angular-compiler][0m
+
+    src/app/components/menu-l
+ist/menu-list.component.ts:16
+:28:
+[37m      16 Γöé import { 
+MenuService } from [32m'../s
+ervices/menu.service'[37m;
+         Γò╡                 
+            [32m~~~~~~~~~~~~
+~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR
+[41;31m][0m [1mTS2307: 
+Cannot find module 
+'../services/cart.service' 
+or its corresponding type 
+declarations.[0m 
+[1m[35m[plugin 
+angular-compiler][0m
+
+    src/app/components/menu-l
+ist/menu-list.component.ts:17
+:28:
+[37m      17 Γöé import { 
+CartService } from [32m'../s
+ervices/cart.service'[37m;
+         Γò╡                 
+            [32m~~~~~~~~~~~~
+~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR
+[41;31m][0m [1mTS2307: 
+Cannot find module 
+'../models/models' or its 
+corresponding type 
+declarations.[0m 
+[1m[35m[plugin 
+angular-compiler][0m
+
+    src/app/components/menu-l
+ist/menu-list.component.ts:18
+:25:
+[37m      18 Γöé import { 
+MenuItem } from 
+[32m'../models/models'[37m;
+         Γò╡                 
+         
+[32m~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR
+[41;31m][0m [1mTS2307: 
+Cannot find module 
+'../pipes/filter-menu.pipe' 
+or its corresponding type 
+declarations.[0m 
+[1m[35m[plugin 
+angular-compiler][0m
+
+    src/app/components/menu-l
+ist/menu-list.component.ts:19
+:31:
+[37m      19 Γöé import { 
+FilterMenuPipe } from [32m'.
+./pipes/filter-menu.pipe'[37
+m;
+         Γò╡                 
+               [32m~~~~~~~~~
+~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR
+[41;31m][0m [1mTS2307: 
+Cannot find module '../direct
+ives/highlight.directive' or 
+its corresponding type 
+declarations.[0m 
+[1m[35m[plugin 
+angular-compiler][0m
+
+    src/app/components/menu-l
+ist/menu-list.component.ts:20
+:35:
+[37m      20 Γöé ...t { 
+HighlightDirective } from [3
+2m'../directives/highlight.di
+rective'[37m;
+         Γò╡                 
+                 [32m~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0m
+
+
+[31mX [41;31m[[41;97mERROR
+[41;31m][0m [1mNG2003: No 
+suitable injection token for 
+parameter 'menuService' of 
+class 'MenuListComponent'.
+  Consider using the @Inject 
+decorator to specify an 
+injection token.[0m 
+[1m[35m[plugin 
+angular-compiler][0m
+
+    src/app/components/menu-l
+ist/menu-list.component.ts:59
+9:11:
+[37m      599 Γöé     
+public 
+[32mmenuService[37m: 
+MenuService,
+          Γò╡            
+[32m~~~~~~~~~~~[0m
+
+  This type does not have a 
+value, so it cannot be used 
+as injection token.
+
+    src/app/components/menu-l
+ist/menu-list.component.ts:59
+9:24:
+[37m      599 Γöé     
+public menuService: 
+[32mMenuService[37m,
+          Γò╡                
+         [32m~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR
+[41;31m][0m [1mTS7006: 
+Parameter 'i' implicitly has 
+an 'any' type.[0m 
+[1m[35m[plugin 
+angular-compiler][0m
+
+    src/app/components/menu-l
+ist/menu-list.component.ts:63
+6:44:
+[37m      636 Γöé ...menuSer
+vice.menuItems().filter([32m
+i[37m => i.category === 
+this.select...
+          Γò╡                
+                   [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR
+[41;31m][0m [1mTS7006: 
+Parameter 'c' implicitly has 
+an 'any' type.[0m 
+[1m[35m[plugin 
+angular-compiler][0m
+
+    src/app/components/menu-l
+ist/menu-list.component.ts:66
+8:44:
+[37m      668 Γöé ...n this.
+menuService.categories.find(
+[32mc[37m => c.id === 
+id)?.name || id;
+          Γò╡                
+                       
+[32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR
+[41;31m][0m [1mTS2307: 
+Cannot find module 
+'../services/cart.service' 
+or its corresponding type 
+declarations.[0m 
+[1m[35m[plugin 
+angular-compiler][0m
+
+    src/app/components/navbar
+/navbar.component.ts:7:28:
+[37m      7 Γöé import { 
+CartService } from [32m'../s
+ervices/cart.service'[37m;
+        Γò╡                  
+           [32m~~~~~~~~~~~~~
+~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR
+[41;31m][0m [1mNG2003: No 
+suitable injection token for 
+parameter 'cartService' of 
+class 'NavbarComponent'.
+  Consider using the @Inject 
+decorator to specify an 
+injection token.[0m 
+[1m[35m[plugin 
+angular-compiler][0m
+
+    src/app/components/navbar
+/navbar.component.ts:267:21:
+[37m      267 Γöé   
+constructor(public 
+[32mcartService[37m: 
+CartService) {}
+          Γò╡                
+      [32m~~~~~~~~~~~[0m
+
+  This type does not have a 
+value, so it cannot be used 
+as injection token.
+
+    src/app/components/navbar
+/navbar.component.ts:267:34:
+[37m      267 Γöé   
+constructor(public 
+cartService: 
+[32mCartService[37m) {}
+          Γò╡                
+                   
+[32m~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR
+[41;31m][0m [1mTS2307: 
+Cannot find module 
+'../services/order.service' 
+or its corresponding type 
+declarations.[0m 
+[1m[35m[plugin 
+angular-compiler][0m
+
+    src/app/components/order-
+confirmation/order-confirmati
+on.component.ts:7:29:
+[37m      7 Γöé import { 
+OrderService } from [32m'../
+services/order.service'[37m;
+        Γò╡                  
+            [32m~~~~~~~~~~~~
+~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR
+[41;31m][0m [1mTS2307: 
+Cannot find module 
+'../models/models' or its 
+corresponding type 
+declarations.[0m 
+[1m[35m[plugin 
+angular-compiler][0m
+
+    src/app/components/order-
+confirmation/order-confirmati
+on.component.ts:8:22:
+[37m      8 Γöé import { 
+Order } from 
+[32m'../models/models'[37m;
+        Γò╡                  
+     
+[32m~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR
+[41;31m][0m [1mNG2003: No 
+suitable injection token for 
+parameter 'orderService' of 
+class 
+'OrderConfirmationComponent'.
+  Consider using the @Inject 
+decorator to specify an 
+injection token.[0m 
+[1m[35m[plugin 
+angular-compiler][0m
+
+    src/app/components/order-
+confirmation/order-confirmati
+on.component.ts:367:22:
+[37m      367 Γöé   
+constructor(private 
+[32morderService[37m: 
+OrderService) {}
+          Γò╡                
+       [32m~~~~~~~~~~~~[0m
+
+  This type does not have a 
+value, so it cannot be used 
+as injection token.
+
+    src/app/components/order-
+confirmation/order-confirmati
+on.component.ts:367:36:
+[37m      367 Γöé   
+constructor(private 
+orderService: 
+[32mOrderService[37m) {}
+          Γò╡                
+                     
+[32m~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR
+[41;31m][0m [1mTS2307: 
+Cannot find module 
+'../services/cart.service' 
+or its corresponding type 
+declarations.[0m 
+[1m[35m[plugin 
+angular-compiler][0m
+
+    src/app/components/order-
+form/order-form.component.ts:
+13:28:
+[37m      13 Γöé import { 
+CartService } from [32m'../s
+ervices/cart.service'[37m;
+         Γò╡                 
+            [32m~~~~~~~~~~~~
+~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR
+[41;31m][0m [1mTS2307: 
+Cannot find module 
+'../services/order.service' 
+or its corresponding type 
+declarations.[0m 
+[1m[35m[plugin 
+angular-compiler][0m
+
+    src/app/components/order-
+form/order-form.component.ts:
+14:29:
+[37m      14 Γöé import { 
+OrderService } from [32m'../
+services/order.service'[37m;
+         Γò╡                 
+             [32m~~~~~~~~~~~
+~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR
+[41;31m][0m [1mTS2307: 
+Cannot find module 
+'../models/models' or its 
+corresponding type 
+declarations.[0m 
+[1m[35m[plugin 
+angular-compiler][0m
+
+    src/app/components/order-
+form/order-form.component.ts:
+15:38:
+[37m      15 Γöé import { 
+Customer, PaymentInfo } from 
+[32m'../models/models'[37m;
+         Γò╡                 
+                      
+[32m~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR
+[41;31m][0m [1mNG2003: No 
+suitable injection token for 
+parameter 'cartService' of 
+class 'OrderFormComponent'.
+  Consider using the @Inject 
+decorator to specify an 
+injection token.[0m 
+[1m[35m[plugin 
+angular-compiler][0m
+
+    src/app/components/order-
+form/order-form.component.ts:
+613:11:
+[37m      613 Γöé     
+public 
+[32mcartService[37m: 
+CartService,
+          Γò╡            
+[32m~~~~~~~~~~~[0m
+
+  This type does not have a 
+value, so it cannot be used 
+as injection token.
+
+    src/app/components/order-
+form/order-form.component.ts:
+613:24:
+[37m      613 Γöé     
+public cartService: 
+[32mCartService[37m,
+          Γò╡                
+         [32m~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR
+[41;31m][0m [1mCould not 
+resolve "@angular/animations/
+browser"[0m
+
+    node_modules/@angular/pla
+tform-browser/fesm2022/animat
+ions-async.mjs:36:51:
+[37m      36 Γöé 
+....moduleImpl ?? import([32
+m'@angular/animations/browser
+'[37m).then(m => m);
+         Γò╡                 
+         [32m~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~[0m
+
+  You can mark the path "@ang
+ular/animations/browser" as 
+external to exclude it from 
+the bundle, which will 
+remove this error and leave 
+the unresolved path in the 
+bundle. You can also add 
+".catch()" here to handle 
+this failure at run-time 
+instead of bundle-time.
+
+
+[31mX [41;31m[[41;97mERROR
+[41;31m][0m [1mCould not 
+resolve "../pipes/filter-menu
+.pipe"[0m
+
+    src/app/components/menu-l
+ist/menu-list.component.ts:16
+:31:
+[37m      16 Γöé import { 
+FilterMenuPipe } from [32m'.
+./pipes/filter-menu.pipe'[37
+m;
+         Γò╡                 
+               [32m~~~~~~~~~
+~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR
+[41;31m][0m [1mCould not 
+resolve "../directives/highli
+ght.directive"[0m
+
+    src/app/components/menu-l
+ist/menu-list.component.ts:17
+:35:
+[37m      17 Γöé ...t { 
+HighlightDirective } from [3
+2m'../directives/highlight.di
+rective'[37m;
+         Γò╡                 
+                 [32m~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0m
+
+[39m[22m
